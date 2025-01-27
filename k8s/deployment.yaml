@@ -1,0 +1,42 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: adwise-tagging
+  namespace: adwise
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: adwise-tagging
+  template:
+    metadata:
+      labels:
+        app: adwise-tagging
+    spec:
+      containers:
+      - name: adwise-tagging
+        image: ${DOCKER_REGISTRY}/adwise-tagging:${BUILD_TAG}
+        ports:
+        - containerPort: 5000
+        resources:
+          requests:
+            memory: "1Gi"
+            cpu: "500m"
+          limits:
+            memory: "2Gi"
+            cpu: "1000m"
+        envFrom:
+        - secretRef:
+            name: adwise-secrets
+        livenessProbe:
+          httpGet:
+            path: /health
+            port: 5000
+          initialDelaySeconds: 30
+          periodSeconds: 10
+        readinessProbe:
+          httpGet:
+            path: /health
+            port: 5000
+          initialDelaySeconds: 5
+          periodSeconds: 5 

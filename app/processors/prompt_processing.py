@@ -1,4 +1,7 @@
-from openai_client import OpenAIAssistant
+import logging
+import ast  # Add this import at the top
+from .openai_client import OpenAIAssistant  # Use relative import
+logger = logging.getLogger(__name__)
 
 PROMPT_CLEANING_AUDIO_TEXT="""Please clean up the following audio text by correcting spelling, grammar, and punctuation errors:
 Return only the cleaned-up audio text.
@@ -29,9 +32,9 @@ Restrictions: Local ads are not allowed in certain states like Idaho, Nevada, Ne
 
 Type Two Tags (Sponsor Type) – Funding Source Based on OCR data:
 #Paid_by_Candidate_Campaign:
-Tag if the ad is funded by the candidate or their campaign committee. This includes both positive and negative ads about an opponent that are funded by the candidate’s campaign.
+Tag if the ad is funded by the candidate or their campaign committee. This includes both positive and negative ads about an opponent that are funded by the candidate's campaign.
 Example: "Paid for by John Smith for Senate Committee".
-#Paid_by_Political_Party_Third_Party-PAC:
+#Paid_by_Political_Party-Third_Party-PAC:
 Tag if the ad is funded by a political party, Super PAC, or any third-party organization (not directly funded by the candidate's campaign).
 Example: "Paid for by the Republican National Committee" or "Paid for by the Democratic Party PAC".
 Type Three Tags (Party Type) – Political Party Affiliation:
@@ -41,7 +44,7 @@ Example: "Paid for by the Democratic National Committee" or "Vote for Kamala Har
 #Republican_Party:
 Tag if the ad is promoting Republican Party candidates, issues, or policies.
 Example: "Paid for by the Republican National Committee" or "Vote for Ron DeSantis, Republican".
-#Third_Party_or_Non_Partisan:
+#Third_Party_or_Non-Partisan:
 Tag if the ad is promoting third-party, independent, or non-partisan candidates/issues.
 Example: "Paid for by the Green Party" or "Vote for Gary Johnson, Libertarian".
 Note: If the party affiliation is not explicitly mentioned in the text, infer the party based on candidate names or external data sources such as Ballotpedia or other relevant databases.
@@ -52,13 +55,12 @@ Contextual Inference for Party Affiliation:
 If a candidate's name is recognized in the audio or OCR text (e.g., Kamala Harris, Ron DeSantis, etc.), infer their party affiliation based on well-known political associations.
 If the affiliation is unclear, use external data sources such as Ballotpedia to identify the correct party.
 OCR Text Analysis:
-Use the OCR data to cross-check mentions of party names (e.g., “Republican Party”, “Democratic Party”, etc.) or political figures known to belong to those parties.
-If OCR mentions “Super PAC”, “Republican National Committee”, or “Democratic National Committee”, tag the funding source with #Paid_by_Political_Party_Third_Party-PAC.
+Use the OCR data to cross-check mentions of party names (e.g., "Republican Party", "Democratic Party", etc.) or political figures known to belong to those parties.
+If OCR mentions "Super PAC", "Republican National Committee", or "Democratic National Committee", tag the funding source with #Paid_by_Political_Party-Third_Party-PAC.
 Ambiguity Handling:
 In cases where the content is ambiguous or does not provide enough detail, avoid tagging.
 
-Output Format
-Format response as a Python list.
+Example response format: ["Tag1", "Tag2", "Tag3"](dont add # before the tag)
 
 For example:
 Input: Audio Text: Here are a few things I believe. Middle-class families, like the one I grew up in, want common-sense solutions. You want lower prices and lower taxes. I believe you want to not just get by, but to get ahead. We must create an opportunity economy where everyone has a chance to get a car  Top Frame OCR: Harris | Harris | Harris  Bottom Frame OCR: Walz, Kamala Harris, and I approve this message. Approved by Kamala Harris. Paid for by Harris for President.
@@ -86,7 +88,7 @@ For ads referencing abortion, Roe v. Wade, or pro-choice/pro-life arguments.
 For mentions of gun rights, the Second Amendment, or gun control. Imagery of non-violent gun usage (e.g., hunting) is acceptable but avoid ads showing violence.
 #Healthcare_and_Prescription_Drugs
 For universal healthcare advocacy or high prescription drug cost issues.
-#Illegal_Drug_Policy
+#IIlegal_Drug_Policy
 For discussions of illegal drug use, Fentanyl imports, overdose deaths, or legalizing drugs like marijuana.
 #Racial_Justice
 For references to race-related policies, affirmative action, or racial equality.
@@ -110,27 +112,87 @@ Multiple Tags: Ads often qualify for multiple tags (e.g., #Illegal_Drug_Policy +
 Do not modify or create new tags.
 Include a topic if it's a significant focus or clearly implied, even if not explicitly stated.
 
-Output Format
-Format response as a Python list.
+Example response format: ["Tag1", "Tag2", "Tag3"](dont add # before the tag)
 
 For example:
 Input: Audio Text: It's an unthinkable trauma when a woman is raped and becomes pregnant. As a sexual assault counselor, I've seen it too many times. But Sam Brown has spent the last decade pushing to ban abortion without any exception for rape or incest. He even supported the Texas ban, one of the harshest in the country  Top Frame OCR: This is top frame OCR: ||  Bottom Frame OCR: Paid for by Friends of Jacky Rosen, approved by Jacky Rosen.
 Output: ["Social_Security","Healthcare_and_Prescription_Drugs","Immigration"]
+
 """
 
 
-def getTagsForUnprocessedContent(audio_ocr_text:str, top_frame_ocr_text:str, bottom_frame_ocr_text:str):
+async def getTagsForUnprocessedContent(audio_ocr_text: str, top_frame_ocr_text: str, bottom_frame_ocr_text: str):
     """
-    This function will take the audio OCR text, top frame OCR text and bottom frame OCR text as input and return the tags for the content as output.
+    This function will take the audio OCR text, top frame OCR text and bottom frame OCR text as input 
+    and return the unique tags for the content as output.
     """
     assistant = OpenAIAssistant()
-    cleaned_audio_text = assistant.gpt_4_min_response(f"{PROMPT_CLEANING_AUDIO_TEXT} \n Audio Text: {audio_ocr_text}")
-    cleaned_top_frame_ocr_text = assistant.gpt_4_image_response(f"{PROMPT_CLEANING_OCR_TEXT} \n Top Frame OCR test list: {top_frame_ocr_text}")
-    cleaned_bottom_frame_ocr_text = assistant.gpt_4_image_response(f"{PROMPT_CLEANING_OCR_TEXT} \n Bottom Frame OCR test list: {bottom_frame_ocr_text}")
+    cleaned_audio_text = await assistant.gpt_4_min_response(getPromptForContentCleaning(f"{PROMPT_CLEANING_AUDIO_TEXT} \n Audio Text: {audio_ocr_text}"))
+    logger.info("Cleaned audio text.")
+    cleaned_top_frame_ocr_text = await assistant.gpt_4_min_response(getPromptForContentCleaning(f"{PROMPT_CLEANING_OCR_TEXT} \n Top Frame OCR test list: {top_frame_ocr_text}"))
+    logger.info("Cleaned top frame OCR text.")
+    cleaned_bottom_frame_ocr_text = await assistant.gpt_4_min_response(getPromptForContentCleaning(f"{PROMPT_CLEANING_OCR_TEXT} \n Bottom Frame OCR test list: {bottom_frame_ocr_text}"))
+    logger.info("Cleaned bottom frame OCR text.")
     
-    tags = assistant.gpt_4_min_response(f"{PROMPT_FINDING_CONTENT_TAGS} \n Audio Text: {cleaned_audio_text} \n Top Frame OCR: {cleaned_top_frame_ocr_text} \n Bottom Frame OCR: {cleaned_bottom_frame_ocr_text}")
+    tag_main = await assistant.gpt_4_response(getPromptForCreativeTags(
+        f"{PROMPT_FINDING_MAIN_TAGS}\n\n"
+        f"Audio Text: {cleaned_audio_text}\n"
+        f"Top Frame OCR: {cleaned_top_frame_ocr_text}\n"
+        f"Bottom Frame OCR: {cleaned_bottom_frame_ocr_text}"
+    ))
+    logger.info(f"Main tags: {tag_main}")
+    try:
+        # Safely convert string response to list
+        tag_main = ast.literal_eval(tag_main)
+        if not isinstance(tag_main, list):
+            logger.error("Main tags response is not a list")
+            tag_main = []
+    except (ValueError, SyntaxError) as e:
+        logger.error(f"Error parsing main tags response: {e}")
+        tag_main = []
     
-    return tags
+    tags_content = await assistant.gpt_4_response(getPromptForCreativeTags(
+        f"{PROMPT_FINDING_CONTENT_TAGS}\n\n"
+        f"Audio Text: {cleaned_audio_text}\n"
+        f"Top Frame OCR: {cleaned_top_frame_ocr_text}\n"
+        f"Bottom Frame OCR: {cleaned_bottom_frame_ocr_text}"
+    ))
+    logger.info(f"Content tags: {tags_content}")
+    try:
+        # Safely convert string response to list
+        tags_content = ast.literal_eval(tags_content)
+        if not isinstance(tags_content, list):
+            logger.error("Content tags response is not a list")
+            tags_content = []
+    except (ValueError, SyntaxError) as e:
+        logger.error(f"Error parsing content tags response: {e}")
+        tags_content = []
+    
+    # Combine lists and remove duplicates while preserving order
+    combined_tags = list(dict.fromkeys(tag_main + tags_content))
+    
+    return combined_tags
 
+
+def getPromptForContentCleaning(message: str):
+    """
+    This function returns the prompt for cleaning the audio and OCR text.
+    """
+    prompt=[
+      {"role": "system", "content": "You are tasked with cleaning up the unprocessed text related to politicals ads."},
+      {"role": "user", "content": message }
+    ]
     
-     
+    return prompt
+
+
+def getPromptForCreativeTags(message: str):
+    """
+    This function returns the prompt for finding the tags for the content.
+    """
+    prompt=[
+      {"role": "system", "content": "You are expert political analyst, categorize this US political video ad details as mentioned."},
+      {"role": "user", "content": message }
+    ]
+    
+    return prompt

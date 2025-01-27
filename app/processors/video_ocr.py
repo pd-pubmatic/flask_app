@@ -2,39 +2,47 @@ import pandas as pd
 import easyocr
 import cv2
 from PIL import Image
+import os
+import numpy as np
+import logging
+
+logger = logging.getLogger(__name__)
 
 # Initialize EasyOCR reader
 reader = easyocr.Reader(['en'], gpu=False)
+input_folder_path="app/resources"
 
-def capture_crop_frames_and_get_ocr(video_file_path):
-    """
-    Captures frames at specific times in a video, crops them, and performs OCR.
-    Returns OCR results for the top and bottom portions of the frames.
-    """
-    cap = cv2.VideoCapture(video_file_path)
-    frame_rate = cap.get(cv2.CAP_PROP_FPS)
-    total_frames = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
-    duration = total_frames / frame_rate
+async def capture_crop_frames_and_get_ocr(filename: str):
+    try:
+        video_file_path = os.path.join(input_folder_path, filename)
+        cap = cv2.VideoCapture(video_file_path)
+        frame_rate = cap.get(cv2.CAP_PROP_FPS)
+        total_frames = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
+        duration = total_frames / frame_rate
 
-    # Times to capture frames: last 0.5 sec, 1 sec, and 2 sec
-    capture_times = [duration - 0.5, duration - 1, duration - 2]
+        # Times to capture frames: last 0.5 sec, 1 sec, and 2 sec
+        capture_times = [duration - 0.5, duration - 1, duration - 2]
 
-    top_frame_ocr_list = []
-    bottom_frame_ocr_list = []
-    
-    for t in capture_times:
-        cap.set(cv2.CAP_PROP_POS_MSEC, t * 1000)  # Set to the specific time
-        success, frame = cap.read()
-        if success:
-            # Process the frame directly for OCR
-            top_ocr, bottom_ocr = crop_image(frame)
-            top_frame_ocr_list.append(top_ocr)
-            bottom_frame_ocr_list.append(bottom_ocr)
-        else:
-            print(f"Failed to capture frame at {t} seconds")
+        top_frame_ocr_list = []
+        bottom_frame_ocr_list = []
+        
+        for t in capture_times:
+            cap.set(cv2.CAP_PROP_POS_MSEC, t * 1000)  # Set to the specific time
+            success, frame = cap.read()
+            if success:
+                # Process the frame directly for OCR
+                top_ocr, bottom_ocr = crop_image(frame)
+                top_frame_ocr_list.append(top_ocr)
+                bottom_frame_ocr_list.append(bottom_ocr)
+            else:
+                print(f"Failed to capture frame at {t} seconds")
 
-    cap.release()
-    return top_frame_ocr_list, bottom_frame_ocr_list
+        cap.release()
+        logger.info(f"OCR Data for {filename}: {top_frame_ocr_list}, {bottom_frame_ocr_list}")
+        return top_frame_ocr_list, bottom_frame_ocr_list
+    except Exception as e:
+        logger.error(f"Error processing OCR for {filename}: {e}")
+        raise RuntimeError(f"Error processing OCR for {filename}: {e}")
 
 def crop_image(frame):
     """
@@ -47,15 +55,20 @@ def crop_image(frame):
     width, height = img.size
 
     # Define crop areas
-    top_box = (0, 0, width, int(height * 0.8))  # Top 70%
-    bottom_box = (0, int(height * 0.8), width, height)  # Bottom 30%
+    top_box = (0, 0, width, int(height * 0.8))  # Top 80%
+    bottom_box = (0, int(height * 0.8), width, height)  # Bottom 20%
 
-    # Crop and perform OCR
+    # Crop the image
     top_img = img.crop(top_box)
     bottom_img = img.crop(bottom_box)
+    
+    # Convert PIL images to numpy arrays directly
+    top_np_array = np.array(top_img)
+    bottom_np_array = np.array(bottom_img)
 
-    top_ocr_result = perform_ocr(top_img)
-    bottom_ocr_result = perform_ocr(bottom_img)
+    # Perform OCR
+    top_ocr_result = perform_ocr(top_np_array)
+    bottom_ocr_result = perform_ocr(bottom_np_array)
 
     return top_ocr_result, bottom_ocr_result
 

@@ -2,10 +2,13 @@ import speech_recognition as sr
 import os
 from moviepy.editor import VideoFileClip
 import pandas as pd
+import logging
 
-# Initialize the speech recognizer
-r = sr.Recognizer()
-r.energy_threshold = 500
+logger = logging.getLogger(__name__)
+
+# Initialize the speech recognizer once as a global instance
+recognizer = sr.Recognizer()
+recognizer.energy_threshold = 500
 
 input_folder_path="app/resources"
 
@@ -15,23 +18,23 @@ def extract_audio_from_video(video_path, audio_output_path):
     clip.audio.write_audiofile(audio_output_path)
 
 # Process each video file in the input folder
-def transcribe_audio(filename):
-    
-        if filename.endswith(".mp4"):  # Adjust the file extension as needed
-            video_path = os.path.join(input_folder_path, filename)
-            audio_path = os.path.splitext(video_path)[0] + ".wav"
+async def transcribe_audio(filename: str) -> str:
+    if filename.endswith(".mp4"):  # Adjust the file extension as needed
+        video_path = os.path.join(input_folder_path, filename)
+        audio_path = os.path.splitext(video_path)[0] + ".wav"
 
-        try:
-            # Extract audio from the video file
-            extract_audio_from_video(video_path, audio_path)
-            
-            # Recognize speech from the extracted audio
-            with sr.AudioFile(audio_path) as source:
-                audio = r.record(source)
-            transcription = r.recognize_google(audio)
+    try:
+        extract_audio_from_video(video_path, audio_path)
         
-            return transcription;
+        # Use the global recognizer instance instead of creating a new one
+        with sr.AudioFile(audio_path) as source:
+            audio = recognizer.record(source)
+        transcription = recognizer.recognize_google(audio)
         
-        except Exception as e:
-            print(f"Error processing file {filename}: {e}")
+        logger.info(f"Transcription for {filename}: {transcription}")
+        return transcription
+        
+    except Exception as e:
+        logger.error(f"Error processing file {filename}: {e}")
+        raise RuntimeError(f"Error processing file {filename}: {e}")
 

@@ -1,0 +1,391 @@
+[2025-01-20 18:12:07,981] WARNING in easyocr: Using CPU. Note: This module is much faster with a GPU.
+[2025-01-20 18:12:09,456] WARNING in warnings: /home/test/.local/lib/python3.10/site-packages/easyocr/detection.py:78: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  net.load_state_dict(copyStateDict(torch.load(trained_model, map_location=device)))
+
+[2025-01-20 18:12:09,523] WARNING in warnings: /home/test/.local/lib/python3.10/site-packages/easyocr/recognition.py:169: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  state_dict = torch.load(model_path, map_location=device)
+
+[2025-01-21 17:32:25,265] WARNING in easyocr: Using CPU. Note: This module is much faster with a GPU.
+[2025-01-21 17:32:26,744] WARNING in warnings: /home/test/.local/lib/python3.10/site-packages/easyocr/detection.py:78: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  net.load_state_dict(copyStateDict(torch.load(trained_model, map_location=device)))
+
+[2025-01-21 17:32:26,838] WARNING in warnings: /home/test/.local/lib/python3.10/site-packages/easyocr/recognition.py:169: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  state_dict = torch.load(model_path, map_location=device)
+
+[2025-01-21 17:47:22,588] WARNING in easyocr: Using CPU. Note: This module is much faster with a GPU.
+[2025-01-21 17:47:23,983] WARNING in warnings: /home/test/.local/lib/python3.10/site-packages/easyocr/detection.py:78: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  net.load_state_dict(copyStateDict(torch.load(trained_model, map_location=device)))
+
+[2025-01-21 17:47:24,052] WARNING in warnings: /home/test/.local/lib/python3.10/site-packages/easyocr/recognition.py:169: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  state_dict = torch.load(model_path, map_location=device)
+
+[2025-01-21 17:47:24,106] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-01-21 17:47:24,107] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-01-21 17:47:24,107] INFO in _internal:  * Restarting with stat
+[2025-01-21 17:47:26,079] WARNING in easyocr: Using CPU. Note: This module is much faster with a GPU.
+[2025-01-21 17:47:27,512] WARNING in warnings: /home/test/.local/lib/python3.10/site-packages/easyocr/detection.py:78: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  net.load_state_dict(copyStateDict(torch.load(trained_model, map_location=device)))
+
+[2025-01-21 17:47:27,587] WARNING in warnings: /home/test/.local/lib/python3.10/site-packages/easyocr/recognition.py:169: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  state_dict = torch.load(model_path, map_location=device)
+
+[2025-01-21 17:47:27,625] WARNING in _internal:  * Debugger is active!
+[2025-01-21 17:47:27,626] INFO in _internal:  * Debugger PIN: 103-643-347
+[2025-01-21 17:49:29,777] INFO in _internal:  * Detected change in '/home/test/MyWorkSpace/go-learning/adwise_section/flask_app/app/services/creative_tagging_service.py', reloading
+[2025-01-21 17:49:30,249] INFO in _internal:  * Restarting with stat
+[2025-01-21 17:49:30,408] WARNING in _internal:  * Debugger is active!
+[2025-01-21 17:49:30,409] INFO in _internal:  * Debugger PIN: 103-643-347
+[2025-01-21 17:56:46,878] WARNING in easyocr: Using CPU. Note: This module is much faster with a GPU.
+[2025-01-21 17:56:48,240] WARNING in warnings: /home/test/.local/lib/python3.10/site-packages/easyocr/detection.py:78: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  net.load_state_dict(copyStateDict(torch.load(trained_model, map_location=device)))
+
+[2025-01-21 17:56:48,306] WARNING in warnings: /home/test/.local/lib/python3.10/site-packages/easyocr/recognition.py:169: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  state_dict = torch.load(model_path, map_location=device)
+
+[2025-01-21 17:56:48,343] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-01-21 17:56:48,343] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-01-21 17:56:48,344] INFO in _internal:  * Restarting with stat
+[2025-01-21 17:56:50,805] WARNING in easyocr: Using CPU. Note: This module is much faster with a GPU.
+[2025-01-21 17:56:52,235] WARNING in warnings: /home/test/.local/lib/python3.10/site-packages/easyocr/detection.py:78: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  net.load_state_dict(copyStateDict(torch.load(trained_model, map_location=device)))
+
+[2025-01-21 17:56:52,375] WARNING in warnings: /home/test/.local/lib/python3.10/site-packages/easyocr/recognition.py:169: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  state_dict = torch.load(model_path, map_location=device)
+
+[2025-01-21 17:56:52,439] WARNING in _internal:  * Debugger is active!
+[2025-01-21 17:56:52,440] INFO in _internal:  * Debugger PIN: 103-643-347
+[2025-01-21 18:05:48,841] WARNING in easyocr: Using CPU. Note: This module is much faster with a GPU.
+[2025-01-21 18:05:50,399] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-01-21 18:05:50,399] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-01-21 18:05:50,400] INFO in _internal:  * Restarting with stat
+[2025-01-21 18:05:53,472] WARNING in easyocr: Using CPU. Note: This module is much faster with a GPU.
+[2025-01-21 18:05:55,077] WARNING in _internal:  * Debugger is active!
+[2025-01-21 18:05:55,077] INFO in _internal:  * Debugger PIN: 103-643-347
+[2025-01-21 18:06:04,655] INFO in creative_tagging_routes: Received request for tagging media URLs
+[2025-01-21 18:06:04,659] INFO in _internal: 127.0.0.1 - - [21/Jan/2025 18:06:04] "[35m[1mPOST /public/api/v1/creative-tags-automation/tag/run HTTP/1.1[0m" 202 -
+[2025-01-21 18:06:07,422] INFO in video_file_download: Downloaded video to app/resources/5957441235194305675.mp4
+[2025-01-21 18:06:07,422] INFO in creative_tagging_service: Downloaded video for UCRID 5957441235194305675: 5957441235194305675.mp4
+[2025-01-21 18:06:29,128] INFO in audio_transcription: Transcription for 5957441235194305675.mp4: imagine being here scared and pain waiting waiting because doctors risk prison for helping you that's the truth about arizona's opportunity forces women or having complications to wait wait until a medical emergency but you can end doctor
+[2025-01-21 18:06:29,128] INFO in creative_tagging_service: Transcription for UCRID 5957441235194305675: imagine being here scared and pain waiting waiting because doctors risk prison for helping you that's the truth about arizona's opportunity forces women or having complications to wait wait until a medical emergency but you can end doctor
+[2025-01-21 18:06:48,171] INFO in video_ocr: OCR Data for 5957441235194305675.mp4: ["END ARIZONA'S ABORTION BAN YES ON 139 PAHD FOR BV ARZOMA FOR ABORTHONACCESS NOT AUTHORIZED BV ANV CANDHDATE OR ANV BANDIDATES ABENT", "END ARIZONA'S ABORTION BAN YES ON 139 PAHD FOR BV ARIZOMA FOR ABORTHONACCESS NOT AUTHORIZED BV ANV CANDIDATE OR ANV CANDIDATES ABENT", "END ARIZONA'S ABORTION BAN YES ON 139 PAD FOR BV ARIZOMA FOR ABORTHON ACCESS NOT AUTHORIZED BV ANV CANDIDATE OR ANY BANDHDATES ABENT"], ['IUp DUNURS; SELU (SEHVIGE EMPLUVEES INERNANUNAL UMUN), PLANNED PAHENTHUUD AGHUN FuNu; AND SELU UNTED HEALTHCARE WORKERS WEST', 'TUp HUNUHS; SELU (SEHVIGE EMPLUYEES INEKNANUNAL UMUN); PLANNEU PAKENYHUUD AGHLUN Fund; AND SELU UNTED HEALTHCARE WORKERS WEST', 'IUp DUNURS; SELU (SEHVIGE EMPLUVEES INYERNANUNAL UMUN); PLANNED PAHENTHUUD AGHUN FuNu; ANDSEHU UNTED HEALTHBARE WOAKERS WEST']
+[2025-01-21 18:06:48,172] INFO in creative_tagging_service: OCR data for UCRID 5957441235194305675: ["END ARIZONA'S ABORTION BAN YES ON 139 PAHD FOR BV ARZOMA FOR ABORTHONACCESS NOT AUTHORIZED BV ANV CANDHDATE OR ANV BANDIDATES ABENT", "END ARIZONA'S ABORTION BAN YES ON 139 PAHD FOR BV ARIZOMA FOR ABORTHONACCESS NOT AUTHORIZED BV ANV CANDIDATE OR ANV CANDIDATES ABENT", "END ARIZONA'S ABORTION BAN YES ON 139 PAD FOR BV ARIZOMA FOR ABORTHON ACCESS NOT AUTHORIZED BV ANV CANDIDATE OR ANY BANDHDATES ABENT"], ['IUp DUNURS; SELU (SEHVIGE EMPLUVEES INERNANUNAL UMUN), PLANNED PAHENTHUUD AGHUN FuNu; AND SELU UNTED HEALTHCARE WORKERS WEST', 'TUp HUNUHS; SELU (SEHVIGE EMPLUYEES INEKNANUNAL UMUN); PLANNEU PAKENYHUUD AGHLUN Fund; AND SELU UNTED HEALTHCARE WORKERS WEST', 'IUp DUNURS; SELU (SEHVIGE EMPLUVEES INYERNANUNAL UMUN); PLANNED PAHENTHUUD AGHUN FuNu; ANDSEHU UNTED HEALTHBARE WOAKERS WEST']
+[2025-01-21 18:06:50,328] INFO in _client: HTTP Request: POST https://llm.pubmatic.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-01-21 18:06:50,339] INFO in prompt_processing: Cleaned audio text.
+[2025-01-21 18:06:51,452] INFO in _client: HTTP Request: POST https://llm.pubmatic.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-01-21 18:06:51,453] INFO in prompt_processing: Cleaned top frame OCR text.
+[2025-01-21 18:06:52,577] INFO in _client: HTTP Request: POST https://llm.pubmatic.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-01-21 18:06:52,579] INFO in prompt_processing: Cleaned bottom frame OCR text.
+[2025-01-21 18:06:53,696] INFO in _client: HTTP Request: POST https://llm.pubmatic.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-01-21 18:06:53,698] INFO in prompt_processing: Main tags: ```python
+["State_and_Local_Elections", "Paid_by_Political_Party_Third_Party-PAC", "Third_Party_or_Non_Partisan"]
+```
+[2025-01-21 18:06:54,729] INFO in _client: HTTP Request: POST https://llm.pubmatic.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-01-21 18:06:54,731] INFO in prompt_processing: Content tags: ```python
+["Abortion_and_Reproductive_Health", "Attack_Ads"]
+```
+[2025-01-21 18:06:54,731] INFO in creative_tagging_service: Tags for UCRID 5957441235194305675: ```python
+["State_and_Local_Elections", "Paid_by_Political_Party_Third_Party-PAC", "Third_Party_or_Non_Partisan"]
+``````python
+["Abortion_and_Reproductive_Health", "Attack_Ads"]
+```
+[2025-01-23 12:10:49,693] WARNING in easyocr: Using CPU. Note: This module is much faster with a GPU.
+[2025-01-23 12:10:51,252] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-01-23 12:10:51,253] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-01-23 12:10:51,254] INFO in _internal:  * Restarting with stat
+[2025-01-23 12:10:57,655] WARNING in easyocr: Using CPU. Note: This module is much faster with a GPU.
+[2025-01-23 12:10:59,352] WARNING in _internal:  * Debugger is active!
+[2025-01-23 12:10:59,412] INFO in _internal:  * Debugger PIN: 549-989-569
+[2025-01-23 12:12:18,960] INFO in creative_tagging_routes: Received request for tagging media URLs
+[2025-01-23 12:12:18,965] INFO in _internal: 127.0.0.1 - - [23/Jan/2025 12:12:18] "[35m[1mPOST /public/api/v1/creative-tags-automation/tag/run HTTP/1.1[0m" 202 -
+[2025-01-23 12:12:25,025] INFO in video_file_download: Downloaded video to app/resources/5957441235194305675.mp4
+[2025-01-23 12:12:25,026] INFO in creative_tagging_service: Downloaded video for UCRID 5957441235194305675: 5957441235194305675.mp4
+[2025-01-23 12:12:38,169] INFO in audio_transcription: Transcription for 5957441235194305675.mp4: imagine being here scared and pain waiting waiting because doctors risk prison for helping you that's the truth about arizona's opportunity forces women or having complications to wait wait until a medical emergency but you can end doctor
+[2025-01-23 12:12:38,170] INFO in creative_tagging_service: Transcription for UCRID 5957441235194305675: imagine being here scared and pain waiting waiting because doctors risk prison for helping you that's the truth about arizona's opportunity forces women or having complications to wait wait until a medical emergency but you can end doctor
+[2025-01-23 12:12:57,991] INFO in video_ocr: OCR Data for 5957441235194305675.mp4: ["END ARIZONA'S ABORTION BAN YES ON 139 PAHD FOR BV ARZOMA FOR ABORTHONACCESS NOT AUTHORIZED BV ANV CANDHDATE OR ANV BANDIDATES ABENT", "END ARIZONA'S ABORTION BAN YES ON 139 PAHD FOR BV ARIZOMA FOR ABORTHONACCESS NOT AUTHORIZED BV ANV CANDIDATE OR ANV CANDIDATES ABENT", "END ARIZONA'S ABORTION BAN YES ON 139 PAD FOR BV ARIZOMA FOR ABORTHON ACCESS NOT AUTHORIZED BV ANV CANDIDATE OR ANY BANDHDATES ABENT"], ['IUp DUNURS; SELU (SEHVIGE EMPLUVEES INERNANUNAL UMUN), PLANNED PAHENTHUUD AGHUN FuNu; AND SELU UNTED HEALTHCARE WORKERS WEST', 'TUp HUNUHS; SELU (SEHVIGE EMPLUYEES INEKNANUNAL UMUN); PLANNEU PAKENYHUUD AGHLUN Fund; AND SELU UNTED HEALTHCARE WORKERS WEST', 'IUp DUNURS; SELU (SEHVIGE EMPLUVEES INYERNANUNAL UMUN); PLANNED PAHENTHUUD AGHUN FuNu; ANDSEHU UNTED HEALTHBARE WOAKERS WEST']
+[2025-01-23 12:12:57,991] INFO in creative_tagging_service: OCR data for UCRID 5957441235194305675: ["END ARIZONA'S ABORTION BAN YES ON 139 PAHD FOR BV ARZOMA FOR ABORTHONACCESS NOT AUTHORIZED BV ANV CANDHDATE OR ANV BANDIDATES ABENT", "END ARIZONA'S ABORTION BAN YES ON 139 PAHD FOR BV ARIZOMA FOR ABORTHONACCESS NOT AUTHORIZED BV ANV CANDIDATE OR ANV CANDIDATES ABENT", "END ARIZONA'S ABORTION BAN YES ON 139 PAD FOR BV ARIZOMA FOR ABORTHON ACCESS NOT AUTHORIZED BV ANV CANDIDATE OR ANY BANDHDATES ABENT"], ['IUp DUNURS; SELU (SEHVIGE EMPLUVEES INERNANUNAL UMUN), PLANNED PAHENTHUUD AGHUN FuNu; AND SELU UNTED HEALTHCARE WORKERS WEST', 'TUp HUNUHS; SELU (SEHVIGE EMPLUYEES INEKNANUNAL UMUN); PLANNEU PAKENYHUUD AGHLUN Fund; AND SELU UNTED HEALTHCARE WORKERS WEST', 'IUp DUNURS; SELU (SEHVIGE EMPLUVEES INYERNANUNAL UMUN); PLANNED PAHENTHUUD AGHUN FuNu; ANDSEHU UNTED HEALTHBARE WOAKERS WEST']
+[2025-01-23 12:13:00,152] INFO in _client: HTTP Request: POST https://llm.pubmatic.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-01-23 12:13:00,182] INFO in prompt_processing: Cleaned audio text.
+[2025-01-23 12:13:01,252] INFO in _client: HTTP Request: POST https://llm.pubmatic.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-01-23 12:13:01,257] INFO in prompt_processing: Cleaned top frame OCR text.
+[2025-01-23 12:13:02,433] INFO in _client: HTTP Request: POST https://llm.pubmatic.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-01-23 12:13:02,435] INFO in prompt_processing: Cleaned bottom frame OCR text.
+[2025-01-23 12:13:03,765] INFO in _client: HTTP Request: POST https://llm.pubmatic.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-01-23 12:13:03,769] INFO in prompt_processing: Main tags: ```python
+["#Third_Party_or_Non-Partisan", "#State_and_Local_Elections", "#Paid_by_Political_Party-Third_Party-PAC"]
+```
+[2025-01-23 12:13:05,197] INFO in _client: HTTP Request: POST https://llm.pubmatic.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-01-23 12:13:05,201] INFO in prompt_processing: Content tags: ```python
+["Security_and_Foreign_Policy", "Attack_Ads"]
+```
+[2025-01-23 12:13:05,202] INFO in creative_tagging_service: Tags for UCRID 5957441235194305675: ```python
+["#Third_Party_or_Non-Partisan", "#State_and_Local_Elections", "#Paid_by_Political_Party-Third_Party-PAC"]
+``````python
+["Security_and_Foreign_Policy", "Attack_Ads"]
+```
+[2025-01-23 12:13:05,216] INFO in file_cleanup: Cleaned up file: app/resources/5957441235194305675.mp4
+[2025-01-23 12:13:05,218] INFO in file_cleanup: Cleaned up file: app/resources/5957441235194305675.wav
+[2025-01-23 12:13:11,450] INFO in video_file_download: Downloaded video to app/resources/595744123519430567.mp4
+[2025-01-23 12:13:11,450] INFO in creative_tagging_service: Downloaded video for UCRID 595744123519430567: 595744123519430567.mp4
+[2025-01-23 12:13:26,388] INFO in audio_transcription: Transcription for 595744123519430567.mp4: imagine being here scared and pain waiting waiting because doctors risk prison for helping you that's the truth about arizona's opportunity forces women or having complications to wait wait until a medical emergency but you can end doctor
+[2025-01-23 12:13:26,389] INFO in creative_tagging_service: Transcription for UCRID 595744123519430567: imagine being here scared and pain waiting waiting because doctors risk prison for helping you that's the truth about arizona's opportunity forces women or having complications to wait wait until a medical emergency but you can end doctor
+[2025-01-23 12:13:46,829] INFO in video_ocr: OCR Data for 595744123519430567.mp4: ["END ARIZONA'S ABORTION BAN YES ON 139 PAHD FOR BV ARZOMA FOR ABORTHONACCESS NOT AUTHORIZED BV ANV CANDHDATE OR ANV BANDIDATES ABENT", "END ARIZONA'S ABORTION BAN YES ON 139 PAHD FOR BV ARIZOMA FOR ABORTHONACCESS NOT AUTHORIZED BV ANV CANDIDATE OR ANV CANDIDATES ABENT", "END ARIZONA'S ABORTION BAN YES ON 139 PAD FOR BV ARIZOMA FOR ABORTHON ACCESS NOT AUTHORIZED BV ANV CANDIDATE OR ANY BANDHDATES ABENT"], ['IUp DUNURS; SELU (SEHVIGE EMPLUVEES INERNANUNAL UMUN), PLANNED PAHENTHUUD AGHUN FuNu; AND SELU UNTED HEALTHCARE WORKERS WEST', 'TUp HUNUHS; SELU (SEHVIGE EMPLUYEES INEKNANUNAL UMUN); PLANNEU PAKENYHUUD AGHLUN Fund; AND SELU UNTED HEALTHCARE WORKERS WEST', 'IUp DUNURS; SELU (SEHVIGE EMPLUVEES INYERNANUNAL UMUN); PLANNED PAHENTHUUD AGHUN FuNu; ANDSEHU UNTED HEALTHBARE WOAKERS WEST']
+[2025-01-23 12:13:46,830] INFO in creative_tagging_service: OCR data for UCRID 595744123519430567: ["END ARIZONA'S ABORTION BAN YES ON 139 PAHD FOR BV ARZOMA FOR ABORTHONACCESS NOT AUTHORIZED BV ANV CANDHDATE OR ANV BANDIDATES ABENT", "END ARIZONA'S ABORTION BAN YES ON 139 PAHD FOR BV ARIZOMA FOR ABORTHONACCESS NOT AUTHORIZED BV ANV CANDIDATE OR ANV CANDIDATES ABENT", "END ARIZONA'S ABORTION BAN YES ON 139 PAD FOR BV ARIZOMA FOR ABORTHON ACCESS NOT AUTHORIZED BV ANV CANDIDATE OR ANY BANDHDATES ABENT"], ['IUp DUNURS; SELU (SEHVIGE EMPLUVEES INERNANUNAL UMUN), PLANNED PAHENTHUUD AGHUN FuNu; AND SELU UNTED HEALTHCARE WORKERS WEST', 'TUp HUNUHS; SELU (SEHVIGE EMPLUYEES INEKNANUNAL UMUN); PLANNEU PAKENYHUUD AGHLUN Fund; AND SELU UNTED HEALTHCARE WORKERS WEST', 'IUp DUNURS; SELU (SEHVIGE EMPLUVEES INYERNANUNAL UMUN); PLANNED PAHENTHUUD AGHUN FuNu; ANDSEHU UNTED HEALTHBARE WOAKERS WEST']
+[2025-01-23 12:13:49,232] INFO in _client: HTTP Request: POST https://llm.pubmatic.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-01-23 12:13:49,235] INFO in prompt_processing: Cleaned audio text.
+[2025-01-23 12:13:50,356] INFO in _client: HTTP Request: POST https://llm.pubmatic.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-01-23 12:13:50,358] INFO in prompt_processing: Cleaned top frame OCR text.
+[2025-01-23 12:13:51,388] INFO in _client: HTTP Request: POST https://llm.pubmatic.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-01-23 12:13:51,392] INFO in prompt_processing: Cleaned bottom frame OCR text.
+[2025-01-23 12:13:52,411] INFO in _client: HTTP Request: POST https://llm.pubmatic.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-01-23 12:13:52,413] INFO in prompt_processing: Main tags: ```python
+["Third_Party_or_Non-Partisan", "State_and_Local_Elections", "Paid_by_Political_Party-Third_Party-PAC"]
+```
+[2025-01-23 12:13:53,632] INFO in _client: HTTP Request: POST https://llm.pubmatic.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-01-23 12:13:53,634] INFO in prompt_processing: Content tags: ```python
+["Security_and_Foreign_Policy", "Attack_Ads"]
+```
+[2025-01-23 12:13:53,635] INFO in creative_tagging_service: Tags for UCRID 595744123519430567: ```python
+["Third_Party_or_Non-Partisan", "State_and_Local_Elections", "Paid_by_Political_Party-Third_Party-PAC"]
+``````python
+["Security_and_Foreign_Policy", "Attack_Ads"]
+```
+[2025-01-23 12:13:53,644] INFO in file_cleanup: Cleaned up file: app/resources/595744123519430567.mp4
+[2025-01-23 12:13:53,646] INFO in file_cleanup: Cleaned up file: app/resources/595744123519430567.wav
+[2025-01-23 12:18:17,141] WARNING in easyocr: Using CPU. Note: This module is much faster with a GPU.
+[2025-01-23 12:18:18,698] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-01-23 12:18:18,698] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-01-23 12:18:18,700] INFO in _internal:  * Restarting with stat
+[2025-01-23 12:18:25,181] WARNING in easyocr: Using CPU. Note: This module is much faster with a GPU.
+[2025-01-23 12:18:26,845] WARNING in _internal:  * Debugger is active!
+[2025-01-23 12:18:26,853] INFO in _internal:  * Debugger PIN: 549-989-569
+[2025-01-23 12:18:27,289] INFO in creative_tagging_routes: Received request for tagging media URLs
+[2025-01-23 12:18:27,291] INFO in _internal: 127.0.0.1 - - [23/Jan/2025 12:18:27] "[35m[1mPOST /public/api/v1/creative-tags-automation/tag/run HTTP/1.1[0m" 202 -
+[2025-01-23 12:18:28,524] INFO in video_file_download: Downloaded video to app/resources/5957441235194305675.mp4
+[2025-01-23 12:18:28,525] INFO in creative_tagging_service: Downloaded video for UCRID 5957441235194305675: 5957441235194305675.mp4
+[2025-01-23 12:18:42,825] INFO in audio_transcription: Transcription for 5957441235194305675.mp4: imagine being here scared and pain waiting waiting because doctors risk prison for helping you that's the truth about arizona's opportunity forces women or having complications to wait wait until a medical emergency but you can end doctor
+[2025-01-23 12:18:42,825] INFO in creative_tagging_service: Transcription for UCRID 5957441235194305675: imagine being here scared and pain waiting waiting because doctors risk prison for helping you that's the truth about arizona's opportunity forces women or having complications to wait wait until a medical emergency but you can end doctor
+[2025-01-23 12:19:02,694] INFO in video_ocr: OCR Data for 5957441235194305675.mp4: ["END ARIZONA'S ABORTION BAN YES ON 139 PAHD FOR BV ARZOMA FOR ABORTHONACCESS NOT AUTHORIZED BV ANV CANDHDATE OR ANV BANDIDATES ABENT", "END ARIZONA'S ABORTION BAN YES ON 139 PAHD FOR BV ARIZOMA FOR ABORTHONACCESS NOT AUTHORIZED BV ANV CANDIDATE OR ANV CANDIDATES ABENT", "END ARIZONA'S ABORTION BAN YES ON 139 PAD FOR BV ARIZOMA FOR ABORTHON ACCESS NOT AUTHORIZED BV ANV CANDIDATE OR ANY BANDHDATES ABENT"], ['IUp DUNURS; SELU (SEHVIGE EMPLUVEES INERNANUNAL UMUN), PLANNED PAHENTHUUD AGHUN FuNu; AND SELU UNTED HEALTHCARE WORKERS WEST', 'TUp HUNUHS; SELU (SEHVIGE EMPLUYEES INEKNANUNAL UMUN); PLANNEU PAKENYHUUD AGHLUN Fund; AND SELU UNTED HEALTHCARE WORKERS WEST', 'IUp DUNURS; SELU (SEHVIGE EMPLUVEES INYERNANUNAL UMUN); PLANNED PAHENTHUUD AGHUN FuNu; ANDSEHU UNTED HEALTHBARE WOAKERS WEST']
+[2025-01-23 12:19:02,695] INFO in creative_tagging_service: OCR data for UCRID 5957441235194305675: ["END ARIZONA'S ABORTION BAN YES ON 139 PAHD FOR BV ARZOMA FOR ABORTHONACCESS NOT AUTHORIZED BV ANV CANDHDATE OR ANV BANDIDATES ABENT", "END ARIZONA'S ABORTION BAN YES ON 139 PAHD FOR BV ARIZOMA FOR ABORTHONACCESS NOT AUTHORIZED BV ANV CANDIDATE OR ANV CANDIDATES ABENT", "END ARIZONA'S ABORTION BAN YES ON 139 PAD FOR BV ARIZOMA FOR ABORTHON ACCESS NOT AUTHORIZED BV ANV CANDIDATE OR ANY BANDHDATES ABENT"], ['IUp DUNURS; SELU (SEHVIGE EMPLUVEES INERNANUNAL UMUN), PLANNED PAHENTHUUD AGHUN FuNu; AND SELU UNTED HEALTHCARE WORKERS WEST', 'TUp HUNUHS; SELU (SEHVIGE EMPLUYEES INEKNANUNAL UMUN); PLANNEU PAKENYHUUD AGHLUN Fund; AND SELU UNTED HEALTHCARE WORKERS WEST', 'IUp DUNURS; SELU (SEHVIGE EMPLUVEES INYERNANUNAL UMUN); PLANNED PAHENTHUUD AGHUN FuNu; ANDSEHU UNTED HEALTHBARE WOAKERS WEST']
+[2025-01-23 12:19:04,647] INFO in _client: HTTP Request: POST https://llm.pubmatic.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-01-23 12:19:04,659] INFO in prompt_processing: Cleaned audio text.
+[2025-01-23 12:19:05,668] INFO in _client: HTTP Request: POST https://llm.pubmatic.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-01-23 12:19:05,672] INFO in prompt_processing: Cleaned top frame OCR text.
+[2025-01-23 12:19:07,202] INFO in _client: HTTP Request: POST https://llm.pubmatic.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-01-23 12:19:07,205] INFO in prompt_processing: Cleaned bottom frame OCR text.
+[2025-01-23 12:19:09,145] INFO in _client: HTTP Request: POST https://llm.pubmatic.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-01-23 12:19:09,149] INFO in prompt_processing: Main tags: ```python
+["Third_Party_or_Non-Partisan", "State_and_Local_Elections", "Paid_by_Political_Party-Third_Party-PAC"]
+```
+[2025-01-23 12:19:10,072] INFO in _client: HTTP Request: POST https://llm.pubmatic.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-01-23 12:19:10,076] INFO in prompt_processing: Content tags: ```python
+["Security_and_Foreign_Policy", "Attack_Ads", "DAA_Icon_Confirmed"]
+```
+[2025-01-23 12:19:10,076] INFO in creative_tagging_service: Tags for UCRID 5957441235194305675: ```python
+["Third_Party_or_Non-Partisan", "State_and_Local_Elections", "Paid_by_Political_Party-Third_Party-PAC"]
+``````python
+["Security_and_Foreign_Policy", "Attack_Ads", "DAA_Icon_Confirmed"]
+```
+[2025-01-23 12:19:10,083] INFO in file_cleanup: Cleaned up file: app/resources/5957441235194305675.mp4
+[2025-01-23 12:19:10,085] INFO in file_cleanup: Cleaned up file: app/resources/5957441235194305675.wav
+[2025-01-23 12:20:45,241] INFO in titan_callback: Sending tag result to callback URL: http://ci-va2qa-mgmt.pubmatic.com/titan/adwise/webhook
+[2025-01-23 12:20:46,740] ERROR in titan_callback: POST request failed: 400 Client Error:  for url: http://ci-va2qa-mgmt.pubmatic.com/titan/adwise/webhook
+[2025-01-23 12:20:50,116] ERROR in titan_callback: POST request failed: 400 Client Error:  for url: http://ci-va2qa-mgmt.pubmatic.com/titan/adwise/webhook
+[2025-01-23 12:20:53,555] ERROR in titan_callback: POST request failed: 400 Client Error:  for url: http://ci-va2qa-mgmt.pubmatic.com/titan/adwise/webhook
+[2025-01-23 12:20:56,773] ERROR in titan_callback: POST request failed: 400 Client Error:  for url: http://ci-va2qa-mgmt.pubmatic.com/titan/adwise/webhook
+[2025-01-23 12:21:00,124] ERROR in titan_callback: POST request failed: 400 Client Error:  for url: http://ci-va2qa-mgmt.pubmatic.com/titan/adwise/webhook
+[2025-01-23 12:21:03,458] ERROR in titan_callback: POST request failed: 400 Client Error:  for url: http://ci-va2qa-mgmt.pubmatic.com/titan/adwise/webhook
+[2025-01-23 12:21:07,122] ERROR in titan_callback: POST request failed: 400 Client Error:  for url: http://ci-va2qa-mgmt.pubmatic.com/titan/adwise/webhook
+[2025-01-23 12:21:10,546] ERROR in titan_callback: POST request failed: 400 Client Error:  for url: http://ci-va2qa-mgmt.pubmatic.com/titan/adwise/webhook
+[2025-01-23 12:21:13,800] ERROR in titan_callback: POST request failed: 400 Client Error:  for url: http://ci-va2qa-mgmt.pubmatic.com/titan/adwise/webhook
+[2025-01-23 12:21:17,196] ERROR in titan_callback: POST request failed: 400 Client Error:  for url: http://ci-va2qa-mgmt.pubmatic.com/titan/adwise/webhook
+[2025-01-23 12:25:01,093] WARNING in easyocr: Using CPU. Note: This module is much faster with a GPU.
+[2025-01-23 12:25:02,831] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-01-23 12:25:02,832] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-01-23 12:25:02,833] INFO in _internal:  * Restarting with stat
+[2025-01-23 12:25:09,765] WARNING in easyocr: Using CPU. Note: This module is much faster with a GPU.
+[2025-01-23 12:25:11,416] WARNING in _internal:  * Debugger is active!
+[2025-01-23 12:25:11,417] INFO in _internal:  * Debugger PIN: 549-989-569
+[2025-01-23 12:25:15,723] INFO in creative_tagging_routes: Received request for tagging media URLs
+[2025-01-23 12:25:15,726] INFO in _internal: 127.0.0.1 - - [23/Jan/2025 12:25:15] "[35m[1mPOST /public/api/v1/creative-tags-automation/tag/run HTTP/1.1[0m" 202 -
+[2025-01-23 12:25:17,115] INFO in video_file_download: Downloaded video to app/resources/5957441235194305675.mp4
+[2025-01-23 12:25:17,116] INFO in creative_tagging_service: Downloaded video for UCRID 5957441235194305675: 5957441235194305675.mp4
+[2025-01-23 12:25:32,064] INFO in audio_transcription: Transcription for 5957441235194305675.mp4: imagine being here scared and pain waiting waiting because doctors risk prison for helping you that's the truth about arizona's opportunity forces women or having complications to wait wait until a medical emergency but you can end doctor
+[2025-01-23 12:25:32,065] INFO in creative_tagging_service: Transcription for UCRID 5957441235194305675: imagine being here scared and pain waiting waiting because doctors risk prison for helping you that's the truth about arizona's opportunity forces women or having complications to wait wait until a medical emergency but you can end doctor
+[2025-01-23 12:25:51,416] INFO in video_ocr: OCR Data for 5957441235194305675.mp4: ["END ARIZONA'S ABORTION BAN YES ON 139 PAHD FOR BV ARZOMA FOR ABORTHONACCESS NOT AUTHORIZED BV ANV CANDHDATE OR ANV BANDIDATES ABENT", "END ARIZONA'S ABORTION BAN YES ON 139 PAHD FOR BV ARIZOMA FOR ABORTHONACCESS NOT AUTHORIZED BV ANV CANDIDATE OR ANV CANDIDATES ABENT", "END ARIZONA'S ABORTION BAN YES ON 139 PAD FOR BV ARIZOMA FOR ABORTHON ACCESS NOT AUTHORIZED BV ANV CANDIDATE OR ANY BANDHDATES ABENT"], ['IUp DUNURS; SELU (SEHVIGE EMPLUVEES INERNANUNAL UMUN), PLANNED PAHENTHUUD AGHUN FuNu; AND SELU UNTED HEALTHCARE WORKERS WEST', 'TUp HUNUHS; SELU (SEHVIGE EMPLUYEES INEKNANUNAL UMUN); PLANNEU PAKENYHUUD AGHLUN Fund; AND SELU UNTED HEALTHCARE WORKERS WEST', 'IUp DUNURS; SELU (SEHVIGE EMPLUVEES INYERNANUNAL UMUN); PLANNED PAHENTHUUD AGHUN FuNu; ANDSEHU UNTED HEALTHBARE WOAKERS WEST']
+[2025-01-23 12:25:51,417] INFO in creative_tagging_service: OCR data for UCRID 5957441235194305675: ["END ARIZONA'S ABORTION BAN YES ON 139 PAHD FOR BV ARZOMA FOR ABORTHONACCESS NOT AUTHORIZED BV ANV CANDHDATE OR ANV BANDIDATES ABENT", "END ARIZONA'S ABORTION BAN YES ON 139 PAHD FOR BV ARIZOMA FOR ABORTHONACCESS NOT AUTHORIZED BV ANV CANDIDATE OR ANV CANDIDATES ABENT", "END ARIZONA'S ABORTION BAN YES ON 139 PAD FOR BV ARIZOMA FOR ABORTHON ACCESS NOT AUTHORIZED BV ANV CANDIDATE OR ANY BANDHDATES ABENT"], ['IUp DUNURS; SELU (SEHVIGE EMPLUVEES INERNANUNAL UMUN), PLANNED PAHENTHUUD AGHUN FuNu; AND SELU UNTED HEALTHCARE WORKERS WEST', 'TUp HUNUHS; SELU (SEHVIGE EMPLUYEES INEKNANUNAL UMUN); PLANNEU PAKENYHUUD AGHLUN Fund; AND SELU UNTED HEALTHCARE WORKERS WEST', 'IUp DUNURS; SELU (SEHVIGE EMPLUVEES INYERNANUNAL UMUN); PLANNED PAHENTHUUD AGHUN FuNu; ANDSEHU UNTED HEALTHBARE WOAKERS WEST']
+[2025-01-23 12:25:53,315] INFO in _client: HTTP Request: POST https://llm.pubmatic.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-01-23 12:25:53,327] INFO in prompt_processing: Cleaned audio text.
+[2025-01-23 12:25:54,472] INFO in _client: HTTP Request: POST https://llm.pubmatic.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-01-23 12:25:54,476] INFO in prompt_processing: Cleaned top frame OCR text.
+[2025-01-23 12:26:32,409] INFO in _client: HTTP Request: POST https://llm.pubmatic.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-01-23 12:26:49,518] INFO in prompt_processing: Cleaned bottom frame OCR text.
+[2025-01-23 12:26:54,582] INFO in _client: HTTP Request: POST https://llm.pubmatic.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-01-23 12:26:54,586] INFO in prompt_processing: Main tags: ```python
+["State_and_Local_Elections", "Paid_by_Political_Party-Third_Party-PAC", "Third_Party_or_Non-Partisan"]
+```
+[2025-01-23 12:27:16,395] INFO in _client: HTTP Request: POST https://llm.pubmatic.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-01-23 12:27:16,399] INFO in prompt_processing: Content tags: ```python
+["Healthcare_and_Prescription_Drugs", "Attack_Ads"]
+```
+[2025-01-23 12:27:16,401] INFO in creative_tagging_service: Tags for UCRID 5957441235194305675: ```python
+["State_and_Local_Elections", "Paid_by_Political_Party-Third_Party-PAC", "Third_Party_or_Non-Partisan"]
+``````python
+["Healthcare_and_Prescription_Drugs", "Attack_Ads"]
+```
+[2025-01-23 12:27:16,406] INFO in file_cleanup: Cleaned up file: app/resources/5957441235194305675.mp4
+[2025-01-23 12:27:16,408] INFO in file_cleanup: Cleaned up file: app/resources/5957441235194305675.wav
+[2025-01-23 12:28:10,591] WARNING in easyocr: Using CPU. Note: This module is much faster with a GPU.
+[2025-01-23 12:28:12,095] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-01-23 12:28:12,095] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-01-23 12:28:12,096] INFO in _internal:  * Restarting with stat
+[2025-01-23 12:28:18,185] WARNING in easyocr: Using CPU. Note: This module is much faster with a GPU.
+[2025-01-23 12:28:19,743] WARNING in _internal:  * Debugger is active!
+[2025-01-23 12:28:19,744] INFO in _internal:  * Debugger PIN: 549-989-569
+[2025-01-23 12:28:43,282] INFO in creative_tagging_routes: Received request for tagging media URLs
+[2025-01-23 12:28:43,283] INFO in _internal: 127.0.0.1 - - [23/Jan/2025 12:28:43] "[35m[1mPOST /public/api/v1/creative-tags-automation/tag/run HTTP/1.1[0m" 202 -
+[2025-01-23 12:28:44,275] INFO in video_file_download: Downloaded video to app/resources/5957441235194305675.mp4
+[2025-01-23 12:28:44,275] INFO in creative_tagging_service: Downloaded video for UCRID 5957441235194305675: 5957441235194305675.mp4
+[2025-01-23 12:29:00,644] INFO in audio_transcription: Transcription for 5957441235194305675.mp4: imagine being here scared and pain waiting waiting because doctors risk prison for helping you that's the truth about arizona's opportunity forces women or having complications to wait wait until a medical emergency but you can end doctor
+[2025-01-23 12:29:00,644] INFO in creative_tagging_service: Transcription for UCRID 5957441235194305675: imagine being here scared and pain waiting waiting because doctors risk prison for helping you that's the truth about arizona's opportunity forces women or having complications to wait wait until a medical emergency but you can end doctor
+[2025-01-23 12:29:19,657] INFO in video_ocr: OCR Data for 5957441235194305675.mp4: ["END ARIZONA'S ABORTION BAN YES ON 139 PAHD FOR BV ARZOMA FOR ABORTHONACCESS NOT AUTHORIZED BV ANV CANDHDATE OR ANV BANDIDATES ABENT", "END ARIZONA'S ABORTION BAN YES ON 139 PAHD FOR BV ARIZOMA FOR ABORTHONACCESS NOT AUTHORIZED BV ANV CANDIDATE OR ANV CANDIDATES ABENT", "END ARIZONA'S ABORTION BAN YES ON 139 PAD FOR BV ARIZOMA FOR ABORTHON ACCESS NOT AUTHORIZED BV ANV CANDIDATE OR ANY BANDHDATES ABENT"], ['IUp DUNURS; SELU (SEHVIGE EMPLUVEES INERNANUNAL UMUN), PLANNED PAHENTHUUD AGHUN FuNu; AND SELU UNTED HEALTHCARE WORKERS WEST', 'TUp HUNUHS; SELU (SEHVIGE EMPLUYEES INEKNANUNAL UMUN); PLANNEU PAKENYHUUD AGHLUN Fund; AND SELU UNTED HEALTHCARE WORKERS WEST', 'IUp DUNURS; SELU (SEHVIGE EMPLUVEES INYERNANUNAL UMUN); PLANNED PAHENTHUUD AGHUN FuNu; ANDSEHU UNTED HEALTHBARE WOAKERS WEST']
+[2025-01-23 12:29:19,657] INFO in creative_tagging_service: OCR data for UCRID 5957441235194305675: ["END ARIZONA'S ABORTION BAN YES ON 139 PAHD FOR BV ARZOMA FOR ABORTHONACCESS NOT AUTHORIZED BV ANV CANDHDATE OR ANV BANDIDATES ABENT", "END ARIZONA'S ABORTION BAN YES ON 139 PAHD FOR BV ARIZOMA FOR ABORTHONACCESS NOT AUTHORIZED BV ANV CANDIDATE OR ANV CANDIDATES ABENT", "END ARIZONA'S ABORTION BAN YES ON 139 PAD FOR BV ARIZOMA FOR ABORTHON ACCESS NOT AUTHORIZED BV ANV CANDIDATE OR ANY BANDHDATES ABENT"], ['IUp DUNURS; SELU (SEHVIGE EMPLUVEES INERNANUNAL UMUN), PLANNED PAHENTHUUD AGHUN FuNu; AND SELU UNTED HEALTHCARE WORKERS WEST', 'TUp HUNUHS; SELU (SEHVIGE EMPLUYEES INEKNANUNAL UMUN); PLANNEU PAKENYHUUD AGHLUN Fund; AND SELU UNTED HEALTHCARE WORKERS WEST', 'IUp DUNURS; SELU (SEHVIGE EMPLUVEES INYERNANUNAL UMUN); PLANNED PAHENTHUUD AGHUN FuNu; ANDSEHU UNTED HEALTHBARE WOAKERS WEST']
+[2025-01-23 12:29:22,667] INFO in _client: HTTP Request: POST https://llm.pubmatic.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-01-23 12:29:22,684] INFO in prompt_processing: Cleaned audio text.
+[2025-01-23 12:29:23,786] INFO in _client: HTTP Request: POST https://llm.pubmatic.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-01-23 12:29:23,788] INFO in prompt_processing: Cleaned top frame OCR text.
+[2025-01-23 12:29:30,122] INFO in _client: HTTP Request: POST https://llm.pubmatic.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-01-23 12:29:30,123] INFO in prompt_processing: Cleaned bottom frame OCR text.
+[2025-01-23 12:29:31,494] INFO in _client: HTTP Request: POST https://llm.pubmatic.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-01-23 12:29:31,498] INFO in prompt_processing: Main tags: ```python
+["State_and_Local_Elections", "Paid_by_Political_Party-Third_Party-PAC", "Third_Party_or_Non-Partisan"]
+```
+[2025-01-23 12:29:31,500] ERROR in creative_tagging_service: Error processing media for UCRID 5957441235194305675: invalid syntax (<string>, line 1)
+[2025-01-23 12:29:31,505] INFO in file_cleanup: Cleaned up file: app/resources/5957441235194305675.mp4
+[2025-01-23 12:29:31,507] INFO in file_cleanup: Cleaned up file: app/resources/5957441235194305675.wav
+[2025-01-23 12:39:21,036] WARNING in easyocr: Using CPU. Note: This module is much faster with a GPU.
+[2025-01-23 12:39:22,623] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-01-23 12:39:22,623] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-01-23 12:39:22,624] INFO in _internal:  * Restarting with stat
+[2025-01-23 12:39:28,620] WARNING in easyocr: Using CPU. Note: This module is much faster with a GPU.
+[2025-01-23 12:39:30,104] WARNING in _internal:  * Debugger is active!
+[2025-01-23 12:39:30,105] INFO in _internal:  * Debugger PIN: 549-989-569
+[2025-01-23 12:39:39,153] INFO in creative_tagging_routes: Received request for tagging media URLs
+[2025-01-23 12:39:39,155] INFO in _internal: 127.0.0.1 - - [23/Jan/2025 12:39:39] "[35m[1mPOST /public/api/v1/creative-tags-automation/tag/run HTTP/1.1[0m" 202 -
+[2025-01-23 12:39:40,161] INFO in video_file_download: Downloaded video to app/resources/5957441235194305675.mp4
+[2025-01-23 12:39:40,161] INFO in creative_tagging_service: Downloaded video for UCRID 5957441235194305675: 5957441235194305675.mp4
+[2025-01-23 12:39:54,390] INFO in audio_transcription: Transcription for 5957441235194305675.mp4: imagine being here scared and pain waiting waiting because doctors risk prison for helping you that's the truth about Arizona supported beam it forces women or having complications to wait wait until a medical emergency but you can end doctor
+[2025-01-23 12:39:54,390] INFO in creative_tagging_service: Transcription for UCRID 5957441235194305675: imagine being here scared and pain waiting waiting because doctors risk prison for helping you that's the truth about Arizona supported beam it forces women or having complications to wait wait until a medical emergency but you can end doctor
+[2025-01-23 12:40:13,791] INFO in video_ocr: OCR Data for 5957441235194305675.mp4: ["END ARIZONA'S ABORTION BAN YES ON 139 PAHD FOR BV ARZOMA FOR ABORTHONACCESS NOT AUTHORIZED BV ANV CANDHDATE OR ANV BANDIDATES ABENT", "END ARIZONA'S ABORTION BAN YES ON 139 PAHD FOR BV ARIZOMA FOR ABORTHONACCESS NOT AUTHORIZED BV ANV CANDIDATE OR ANV CANDIDATES ABENT", "END ARIZONA'S ABORTION BAN YES ON 139 PAD FOR BV ARIZOMA FOR ABORTHON ACCESS NOT AUTHORIZED BV ANV CANDIDATE OR ANY BANDHDATES ABENT"], ['IUp DUNURS; SELU (SEHVIGE EMPLUVEES INERNANUNAL UMUN), PLANNED PAHENTHUUD AGHUN FuNu; AND SELU UNTED HEALTHCARE WORKERS WEST', 'TUp HUNUHS; SELU (SEHVIGE EMPLUYEES INEKNANUNAL UMUN); PLANNEU PAKENYHUUD AGHLUN Fund; AND SELU UNTED HEALTHCARE WORKERS WEST', 'IUp DUNURS; SELU (SEHVIGE EMPLUVEES INYERNANUNAL UMUN); PLANNED PAHENTHUUD AGHUN FuNu; ANDSEHU UNTED HEALTHBARE WOAKERS WEST']
+[2025-01-23 12:40:13,791] INFO in creative_tagging_service: OCR data for UCRID 5957441235194305675: ["END ARIZONA'S ABORTION BAN YES ON 139 PAHD FOR BV ARZOMA FOR ABORTHONACCESS NOT AUTHORIZED BV ANV CANDHDATE OR ANV BANDIDATES ABENT", "END ARIZONA'S ABORTION BAN YES ON 139 PAHD FOR BV ARIZOMA FOR ABORTHONACCESS NOT AUTHORIZED BV ANV CANDIDATE OR ANV CANDIDATES ABENT", "END ARIZONA'S ABORTION BAN YES ON 139 PAD FOR BV ARIZOMA FOR ABORTHON ACCESS NOT AUTHORIZED BV ANV CANDIDATE OR ANY BANDHDATES ABENT"], ['IUp DUNURS; SELU (SEHVIGE EMPLUVEES INERNANUNAL UMUN), PLANNED PAHENTHUUD AGHUN FuNu; AND SELU UNTED HEALTHCARE WORKERS WEST', 'TUp HUNUHS; SELU (SEHVIGE EMPLUYEES INEKNANUNAL UMUN); PLANNEU PAKENYHUUD AGHLUN Fund; AND SELU UNTED HEALTHCARE WORKERS WEST', 'IUp DUNURS; SELU (SEHVIGE EMPLUVEES INYERNANUNAL UMUN); PLANNED PAHENTHUUD AGHUN FuNu; ANDSEHU UNTED HEALTHBARE WOAKERS WEST']
+[2025-01-23 12:40:15,811] INFO in _client: HTTP Request: POST https://llm.pubmatic.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-01-23 12:40:15,822] INFO in prompt_processing: Cleaned audio text.
+[2025-01-23 12:40:16,827] INFO in _client: HTTP Request: POST https://llm.pubmatic.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-01-23 12:40:16,831] INFO in prompt_processing: Cleaned top frame OCR text.
+[2025-01-23 12:40:17,748] INFO in _client: HTTP Request: POST https://llm.pubmatic.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-01-23 12:40:17,749] INFO in prompt_processing: Cleaned bottom frame OCR text.
+[2025-01-23 12:40:27,789] INFO in _client: HTTP Request: POST https://llm.pubmatic.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-01-23 12:41:29,669] INFO in prompt_processing: Main tags: If the video ad relates to US elections, please provide the audio text or OCR text for analysis.
+[2025-01-23 12:41:31,540] ERROR in creative_tagging_service: Error processing media for UCRID 5957441235194305675: invalid syntax (<string>, line 1)
+[2025-01-23 12:41:31,542] INFO in file_cleanup: Cleaned up file: app/resources/5957441235194305675.mp4
+[2025-01-23 12:41:31,543] INFO in file_cleanup: Cleaned up file: app/resources/5957441235194305675.wav
+[2025-01-23 12:43:33,020] WARNING in easyocr: Using CPU. Note: This module is much faster with a GPU.
+[2025-01-23 12:43:34,534] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-01-23 12:43:34,534] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-01-23 12:43:34,535] INFO in _internal:  * Restarting with stat
+[2025-01-23 12:43:40,593] WARNING in easyocr: Using CPU. Note: This module is much faster with a GPU.
+[2025-01-23 12:43:42,189] WARNING in _internal:  * Debugger is active!
+[2025-01-23 12:43:42,190] INFO in _internal:  * Debugger PIN: 549-989-569
+[2025-01-23 12:44:06,191] INFO in creative_tagging_routes: Received request for tagging media URLs
+[2025-01-23 12:44:06,195] INFO in _internal: 127.0.0.1 - - [23/Jan/2025 12:44:06] "[35m[1mPOST /public/api/v1/creative-tags-automation/tag/run HTTP/1.1[0m" 202 -
+[2025-01-23 12:44:07,336] INFO in video_file_download: Downloaded video to app/resources/5957441235194305675.mp4
+[2025-01-23 12:44:07,337] INFO in creative_tagging_service: Downloaded video for UCRID 5957441235194305675: 5957441235194305675.mp4
+[2025-01-23 12:44:21,511] INFO in audio_transcription: Transcription for 5957441235194305675.mp4: imagine being here scared and pain waiting waiting because doctors risk prison for helping you that's the truth about arizona's opportunity forces women or having complications to wait wait until a medical emergency but you can end doctor
+[2025-01-23 12:44:21,511] INFO in creative_tagging_service: Transcription for UCRID 5957441235194305675: imagine being here scared and pain waiting waiting because doctors risk prison for helping you that's the truth about arizona's opportunity forces women or having complications to wait wait until a medical emergency but you can end doctor
+[2025-01-23 12:44:41,531] INFO in video_ocr: OCR Data for 5957441235194305675.mp4: ["END ARIZONA'S ABORTION BAN YES ON 139 PAHD FOR BV ARZOMA FOR ABORTHONACCESS NOT AUTHORIZED BV ANV CANDHDATE OR ANV BANDIDATES ABENT", "END ARIZONA'S ABORTION BAN YES ON 139 PAHD FOR BV ARIZOMA FOR ABORTHONACCESS NOT AUTHORIZED BV ANV CANDIDATE OR ANV CANDIDATES ABENT", "END ARIZONA'S ABORTION BAN YES ON 139 PAD FOR BV ARIZOMA FOR ABORTHON ACCESS NOT AUTHORIZED BV ANV CANDIDATE OR ANY BANDHDATES ABENT"], ['IUp DUNURS; SELU (SEHVIGE EMPLUVEES INERNANUNAL UMUN), PLANNED PAHENTHUUD AGHUN FuNu; AND SELU UNTED HEALTHCARE WORKERS WEST', 'TUp HUNUHS; SELU (SEHVIGE EMPLUYEES INEKNANUNAL UMUN); PLANNEU PAKENYHUUD AGHLUN Fund; AND SELU UNTED HEALTHCARE WORKERS WEST', 'IUp DUNURS; SELU (SEHVIGE EMPLUVEES INYERNANUNAL UMUN); PLANNED PAHENTHUUD AGHUN FuNu; ANDSEHU UNTED HEALTHBARE WOAKERS WEST']
+[2025-01-23 12:44:41,532] INFO in creative_tagging_service: OCR data for UCRID 5957441235194305675: ["END ARIZONA'S ABORTION BAN YES ON 139 PAHD FOR BV ARZOMA FOR ABORTHONACCESS NOT AUTHORIZED BV ANV CANDHDATE OR ANV BANDIDATES ABENT", "END ARIZONA'S ABORTION BAN YES ON 139 PAHD FOR BV ARIZOMA FOR ABORTHONACCESS NOT AUTHORIZED BV ANV CANDIDATE OR ANV CANDIDATES ABENT", "END ARIZONA'S ABORTION BAN YES ON 139 PAD FOR BV ARIZOMA FOR ABORTHON ACCESS NOT AUTHORIZED BV ANV CANDIDATE OR ANY BANDHDATES ABENT"], ['IUp DUNURS; SELU (SEHVIGE EMPLUVEES INERNANUNAL UMUN), PLANNED PAHENTHUUD AGHUN FuNu; AND SELU UNTED HEALTHCARE WORKERS WEST', 'TUp HUNUHS; SELU (SEHVIGE EMPLUYEES INEKNANUNAL UMUN); PLANNEU PAKENYHUUD AGHLUN Fund; AND SELU UNTED HEALTHCARE WORKERS WEST', 'IUp DUNURS; SELU (SEHVIGE EMPLUVEES INYERNANUNAL UMUN); PLANNED PAHENTHUUD AGHUN FuNu; ANDSEHU UNTED HEALTHBARE WOAKERS WEST']
+[2025-01-23 12:44:43,553] INFO in _client: HTTP Request: POST https://llm.pubmatic.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-01-23 12:44:43,564] INFO in prompt_processing: Cleaned audio text.
+[2025-01-23 12:44:44,933] INFO in _client: HTTP Request: POST https://llm.pubmatic.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-01-23 12:44:44,937] INFO in prompt_processing: Cleaned top frame OCR text.
+[2025-01-23 12:45:30,915] INFO in _client: HTTP Request: POST https://llm.pubmatic.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-01-23 12:45:30,917] INFO in prompt_processing: Cleaned bottom frame OCR text.
+[2025-01-23 12:46:02,870] INFO in _client: HTTP Request: POST https://llm.pubmatic.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-01-23 12:46:57,060] INFO in prompt_processing: Main tags: ["State_and_Local_Elections", "Paid_by_Political_Party-Third_Party-PAC", "Democrat_Party"]
+[2025-01-23 12:47:07,277] INFO in _client: HTTP Request: POST https://llm.pubmatic.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-01-23 12:47:09,785] INFO in prompt_processing: Content tags: Please provide the video or transcription of the political ad you would like analyzed, and I will categorize it using the provided tags.
+[2025-01-23 12:47:33,018] ERROR in creative_tagging_service: Error processing media for UCRID 5957441235194305675: invalid syntax (<string>, line 1)
+[2025-01-23 12:47:33,021] INFO in file_cleanup: Cleaned up file: app/resources/5957441235194305675.mp4
+[2025-01-23 12:47:33,023] INFO in file_cleanup: Cleaned up file: app/resources/5957441235194305675.wav
+[2025-01-23 12:47:37,865] INFO in titan_callback: Sending tag result to callback URL: http://ci-va2qa-mgmt.pubmatic.com/titan/adwise/webhook
+[2025-01-23 12:50:46,685] WARNING in easyocr: Using CPU. Note: This module is much faster with a GPU.
+[2025-01-23 12:50:48,257] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-01-23 12:50:48,257] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-01-23 12:50:48,258] INFO in _internal:  * Restarting with stat
+[2025-01-23 12:50:54,428] WARNING in easyocr: Using CPU. Note: This module is much faster with a GPU.
+[2025-01-23 12:50:56,004] WARNING in _internal:  * Debugger is active!
+[2025-01-23 12:50:56,005] INFO in _internal:  * Debugger PIN: 549-989-569
+[2025-01-23 12:51:16,213] INFO in creative_tagging_routes: Received request for tagging media URLs
+[2025-01-23 12:51:16,215] INFO in _internal: 127.0.0.1 - - [23/Jan/2025 12:51:16] "[35m[1mPOST /public/api/v1/creative-tags-automation/tag/run HTTP/1.1[0m" 202 -
+[2025-01-23 12:51:17,518] INFO in video_file_download: Downloaded video to app/resources/5957441235194305675.mp4
+[2025-01-23 12:51:17,518] INFO in creative_tagging_service: Downloaded video for UCRID 5957441235194305675: 5957441235194305675.mp4
+[2025-01-23 12:51:29,544] INFO in audio_transcription: Transcription for 5957441235194305675.mp4: imagine being here scared and pain waiting waiting because doctors risk prison for helping you that's the truth about arizona's opportunity forces women or having complications to wait wait until a medical emergency but you can end doctor
+[2025-01-23 12:51:29,545] INFO in creative_tagging_service: Transcription for UCRID 5957441235194305675: imagine being here scared and pain waiting waiting because doctors risk prison for helping you that's the truth about arizona's opportunity forces women or having complications to wait wait until a medical emergency but you can end doctor
+[2025-01-23 12:51:49,460] INFO in video_ocr: OCR Data for 5957441235194305675.mp4: ["END ARIZONA'S ABORTION BAN YES ON 139 PAHD FOR BV ARZOMA FOR ABORTHONACCESS NOT AUTHORIZED BV ANV CANDHDATE OR ANV BANDIDATES ABENT", "END ARIZONA'S ABORTION BAN YES ON 139 PAHD FOR BV ARIZOMA FOR ABORTHONACCESS NOT AUTHORIZED BV ANV CANDIDATE OR ANV CANDIDATES ABENT", "END ARIZONA'S ABORTION BAN YES ON 139 PAD FOR BV ARIZOMA FOR ABORTHON ACCESS NOT AUTHORIZED BV ANV CANDIDATE OR ANY BANDHDATES ABENT"], ['IUp DUNURS; SELU (SEHVIGE EMPLUVEES INERNANUNAL UMUN), PLANNED PAHENTHUUD AGHUN FuNu; AND SELU UNTED HEALTHCARE WORKERS WEST', 'TUp HUNUHS; SELU (SEHVIGE EMPLUYEES INEKNANUNAL UMUN); PLANNEU PAKENYHUUD AGHLUN Fund; AND SELU UNTED HEALTHCARE WORKERS WEST', 'IUp DUNURS; SELU (SEHVIGE EMPLUVEES INYERNANUNAL UMUN); PLANNED PAHENTHUUD AGHUN FuNu; ANDSEHU UNTED HEALTHBARE WOAKERS WEST']
+[2025-01-23 12:51:49,460] INFO in creative_tagging_service: OCR data for UCRID 5957441235194305675: ["END ARIZONA'S ABORTION BAN YES ON 139 PAHD FOR BV ARZOMA FOR ABORTHONACCESS NOT AUTHORIZED BV ANV CANDHDATE OR ANV BANDIDATES ABENT", "END ARIZONA'S ABORTION BAN YES ON 139 PAHD FOR BV ARIZOMA FOR ABORTHONACCESS NOT AUTHORIZED BV ANV CANDIDATE OR ANV CANDIDATES ABENT", "END ARIZONA'S ABORTION BAN YES ON 139 PAD FOR BV ARIZOMA FOR ABORTHON ACCESS NOT AUTHORIZED BV ANV CANDIDATE OR ANY BANDHDATES ABENT"], ['IUp DUNURS; SELU (SEHVIGE EMPLUVEES INERNANUNAL UMUN), PLANNED PAHENTHUUD AGHUN FuNu; AND SELU UNTED HEALTHCARE WORKERS WEST', 'TUp HUNUHS; SELU (SEHVIGE EMPLUYEES INEKNANUNAL UMUN); PLANNEU PAKENYHUUD AGHLUN Fund; AND SELU UNTED HEALTHCARE WORKERS WEST', 'IUp DUNURS; SELU (SEHVIGE EMPLUVEES INYERNANUNAL UMUN); PLANNED PAHENTHUUD AGHUN FuNu; ANDSEHU UNTED HEALTHBARE WOAKERS WEST']
+[2025-01-23 12:51:51,694] INFO in _client: HTTP Request: POST https://llm.pubmatic.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-01-23 12:51:51,713] INFO in prompt_processing: Cleaned audio text.
+[2025-01-23 12:51:52,887] INFO in _client: HTTP Request: POST https://llm.pubmatic.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-01-23 12:51:52,889] INFO in prompt_processing: Cleaned top frame OCR text.
+[2025-01-23 12:51:53,708] INFO in _client: HTTP Request: POST https://llm.pubmatic.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-01-23 12:51:53,711] INFO in prompt_processing: Cleaned bottom frame OCR text.
+[2025-01-23 12:51:55,141] INFO in _client: HTTP Request: POST https://llm.pubmatic.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-01-23 12:51:55,144] INFO in prompt_processing: Main tags: ["#State_and_Local_Elections", "#Paid_by_Political_Party-Third_Party-PAC", "#Third_Party_or_Non-Partisan"]
+[2025-01-23 12:52:44,166] INFO in _client: HTTP Request: POST https://llm.pubmatic.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-01-23 12:53:54,538] INFO in prompt_processing: Content tags: ["Abortion_and_Reproductive_Health", "Attack_Ads"]
+[2025-01-23 12:53:54,540] INFO in creative_tagging_service: Tags for UCRID 5957441235194305675: ['#State_and_Local_Elections', '#Paid_by_Political_Party-Third_Party-PAC', '#Third_Party_or_Non-Partisan', 'Abortion_and_Reproductive_Health', 'Attack_Ads']
+[2025-01-23 12:53:54,548] INFO in file_cleanup: Cleaned up file: app/resources/5957441235194305675.mp4
+[2025-01-23 12:53:54,551] INFO in file_cleanup: Cleaned up file: app/resources/5957441235194305675.wav
+[2025-01-23 12:55:23,512] INFO in titan_callback: Sending tag result to callback URL: http://ci-va2qa-mgmt.pubmatic.com/titan/adwise/webhook
+[2025-01-23 12:55:24,257] ERROR in titan_callback: POST request failed: 400 Client Error:  for url: http://ci-va2qa-mgmt.pubmatic.com/titan/adwise/webhook
+[2025-01-23 12:55:26,920] ERROR in titan_callback: POST request failed: 400 Client Error:  for url: http://ci-va2qa-mgmt.pubmatic.com/titan/adwise/webhook
+[2025-01-23 12:55:29,539] ERROR in titan_callback: POST request failed: 400 Client Error:  for url: http://ci-va2qa-mgmt.pubmatic.com/titan/adwise/webhook
+[2025-01-23 12:58:30,000] WARNING in easyocr: Using CPU. Note: This module is much faster with a GPU.
+[2025-01-23 12:58:31,651] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-01-23 12:58:31,651] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-01-23 12:58:31,652] INFO in _internal:  * Restarting with stat
+[2025-01-23 12:58:37,848] WARNING in easyocr: Using CPU. Note: This module is much faster with a GPU.
+[2025-01-23 12:58:39,740] WARNING in _internal:  * Debugger is active!
+[2025-01-23 12:58:39,741] INFO in _internal:  * Debugger PIN: 549-989-569
+[2025-01-23 12:59:04,555] INFO in creative_tagging_routes: Received request for tagging media URLs
+[2025-01-23 12:59:04,560] INFO in _internal: 127.0.0.1 - - [23/Jan/2025 12:59:04] "[35m[1mPOST /public/api/v1/creative-tags-automation/tag/run HTTP/1.1[0m" 202 -
+[2025-01-23 12:59:05,498] INFO in video_file_download: Downloaded video to app/resources/5957441235194305675.mp4
+[2025-01-23 12:59:05,498] INFO in creative_tagging_service: Downloaded video for UCRID 5957441235194305675: 5957441235194305675.mp4
+[2025-01-23 12:59:19,945] INFO in audio_transcription: Transcription for 5957441235194305675.mp4: imagine being here scared and pain waiting waiting because doctors risk prison for helping you that's the truth about arizona's opportunity forces women or having complications to wait wait until a medical emergency but you can end doctor
+[2025-01-23 12:59:19,946] INFO in creative_tagging_service: Transcription for UCRID 5957441235194305675: imagine being here scared and pain waiting waiting because doctors risk prison for helping you that's the truth about arizona's opportunity forces women or having complications to wait wait until a medical emergency but you can end doctor
+[2025-01-23 12:59:41,441] INFO in video_ocr: OCR Data for 5957441235194305675.mp4: ["END ARIZONA'S ABORTION BAN YES ON 139 PAHD FOR BV ARZOMA FOR ABORTHONACCESS NOT AUTHORIZED BV ANV CANDHDATE OR ANV BANDIDATES ABENT", "END ARIZONA'S ABORTION BAN YES ON 139 PAHD FOR BV ARIZOMA FOR ABORTHONACCESS NOT AUTHORIZED BV ANV CANDIDATE OR ANV CANDIDATES ABENT", "END ARIZONA'S ABORTION BAN YES ON 139 PAD FOR BV ARIZOMA FOR ABORTHON ACCESS NOT AUTHORIZED BV ANV CANDIDATE OR ANY BANDHDATES ABENT"], ['IUp DUNURS; SELU (SEHVIGE EMPLUVEES INERNANUNAL UMUN), PLANNED PAHENTHUUD AGHUN FuNu; AND SELU UNTED HEALTHCARE WORKERS WEST', 'TUp HUNUHS; SELU (SEHVIGE EMPLUYEES INEKNANUNAL UMUN); PLANNEU PAKENYHUUD AGHLUN Fund; AND SELU UNTED HEALTHCARE WORKERS WEST', 'IUp DUNURS; SELU (SEHVIGE EMPLUVEES INYERNANUNAL UMUN); PLANNED PAHENTHUUD AGHUN FuNu; ANDSEHU UNTED HEALTHBARE WOAKERS WEST']
+[2025-01-23 12:59:41,442] INFO in creative_tagging_service: OCR data for UCRID 5957441235194305675: ["END ARIZONA'S ABORTION BAN YES ON 139 PAHD FOR BV ARZOMA FOR ABORTHONACCESS NOT AUTHORIZED BV ANV CANDHDATE OR ANV BANDIDATES ABENT", "END ARIZONA'S ABORTION BAN YES ON 139 PAHD FOR BV ARIZOMA FOR ABORTHONACCESS NOT AUTHORIZED BV ANV CANDIDATE OR ANV CANDIDATES ABENT", "END ARIZONA'S ABORTION BAN YES ON 139 PAD FOR BV ARIZOMA FOR ABORTHON ACCESS NOT AUTHORIZED BV ANV CANDIDATE OR ANY BANDHDATES ABENT"], ['IUp DUNURS; SELU (SEHVIGE EMPLUVEES INERNANUNAL UMUN), PLANNED PAHENTHUUD AGHUN FuNu; AND SELU UNTED HEALTHCARE WORKERS WEST', 'TUp HUNUHS; SELU (SEHVIGE EMPLUYEES INEKNANUNAL UMUN); PLANNEU PAKENYHUUD AGHLUN Fund; AND SELU UNTED HEALTHCARE WORKERS WEST', 'IUp DUNURS; SELU (SEHVIGE EMPLUVEES INYERNANUNAL UMUN); PLANNED PAHENTHUUD AGHUN FuNu; ANDSEHU UNTED HEALTHBARE WOAKERS WEST']
+[2025-01-23 12:59:43,342] INFO in _client: HTTP Request: POST https://llm.pubmatic.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-01-23 12:59:43,354] INFO in prompt_processing: Cleaned audio text.
+[2025-01-23 12:59:44,633] INFO in _client: HTTP Request: POST https://llm.pubmatic.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-01-23 12:59:44,634] INFO in prompt_processing: Cleaned top frame OCR text.
+[2025-01-23 12:59:45,436] INFO in _client: HTTP Request: POST https://llm.pubmatic.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-01-23 12:59:45,439] INFO in prompt_processing: Cleaned bottom frame OCR text.
+[2025-01-23 13:00:26,354] INFO in _client: HTTP Request: POST https://llm.pubmatic.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-01-23 13:00:26,358] INFO in prompt_processing: Main tags: ["State_and_Local_Elections", "Paid_by_Political_Party-Third_Party-PAC", "Third_Party_or_Non-Partisan"]
+[2025-01-23 13:00:33,628] INFO in _client: HTTP Request: POST https://llm.pubmatic.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-01-23 13:00:33,630] INFO in prompt_processing: Content tags: ["Abortion_and_Reproductive_Health", "Attack_Ads"]
+[2025-01-23 13:00:33,631] INFO in creative_tagging_service: Tags for UCRID 5957441235194305675: ['State_and_Local_Elections', 'Paid_by_Political_Party-Third_Party-PAC', 'Third_Party_or_Non-Partisan', 'Abortion_and_Reproductive_Health', 'Attack_Ads']
+[2025-01-23 13:00:33,633] INFO in file_cleanup: Cleaned up file: app/resources/5957441235194305675.mp4
+[2025-01-23 13:00:33,634] INFO in file_cleanup: Cleaned up file: app/resources/5957441235194305675.wav
+[2025-01-23 13:01:00,986] INFO in titan_callback: Sending tag result to callback URL: http://ci-va2qa-mgmt.pubmatic.com/titan/adwise/webhook
